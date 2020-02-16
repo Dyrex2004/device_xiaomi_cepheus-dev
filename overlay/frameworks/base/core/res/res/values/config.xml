@@ -1142,6 +1142,25 @@
         orientation. If zero, the value of rounded_corner_radius is used. -->
     <dimen name="rounded_corner_radius_bottom">106px</dimen>
 
+    <!-- Vibrator pattern for feedback about a long screen/key press -->
+    <integer-array name="config_longPressVibePattern">
+        <item>0</item>
+        <item>7</item>
+        <item>10</item>
+    </integer-array>
+
+    <!-- Vibrator pattern for feedback about touching a virtual key -->
+    <integer-array name="config_virtualKeyVibePattern">
+        <item>0</item>
+        <item>5</item>
+        <item>10</item>
+    </integer-array>
+
+    <!-- Vibrator pattern for a very short but reliable vibration for soft keyboard tap -->
+    <integer-array name="config_keyboardTapVibePattern">
+        <item>10</item>
+    </integer-array>
+
     <!-- Shows the required view for in-display fingerprint -->
     <bool name="config_supportsInDisplayFingerprint">true</bool>
 

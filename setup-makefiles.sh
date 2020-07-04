@@ -7,6 +7,12 @@
 
 set -e
 
+# Required!
+export DEVICE=cepheus
+export VENDOR=xiaomi
+
+export DEVICE_BRINGUP_YEAR=2019
+
 INITIAL_COPYRIGHT_YEAR=2018
 
 # Load extract_utils and do some sanity checks
@@ -22,8 +28,8 @@ if [ ! -f "${HELPER}" ]; then
 fi
 source "${HELPER}"
 
-# Initialize the helper for common
-setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${LINEAGE_ROOT}" true
+# Initialize the helper for cepheus
+setup_vendor "${DEVICE}" "${VENDOR}" "${LINEAGE_ROOT}" true
 
 # Copyright headers and guards
 write_headers "cepheus"
@@ -48,3 +54,5 @@ if [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt" ]; then
     # Finish
     write_footers
 fi
+
+"./../../${VENDOR}/${DEVICE}/setup-makefiles.sh" "$@"

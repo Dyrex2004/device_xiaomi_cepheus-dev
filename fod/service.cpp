@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_sm8150"
+#define LOG_TAG "lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_cepheus"
 
 #include <android-base/logging.h>
 #include <hidl/HidlTransportSupport.h>

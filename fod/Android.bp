@@ -16,8 +16,8 @@
 cc_binary {
     relative_install_path: "hw",
     defaults: ["hidl_defaults"],
-    name: "vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_sm8150",
-    init_rc: ["vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_sm8150.rc"],
+    name: "vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_cepheus",
+    init_rc: ["vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_cepheus.rc"],
     srcs: [
 	"service.cpp",
         "FingerprintInscreen.cpp",
@@ -37,7 +37,7 @@ cc_binary {
 }
 
 cc_library_static {
-    name: "libfod_extension.xiaomi_sm8150",
+    name: "libfod_extension.xiaomi_cepheus",
     srcs: ["FodExtension.cpp"],
     include_dirs: [
         "frameworks/native/services/surfaceflinger/CompositionEngine/include"

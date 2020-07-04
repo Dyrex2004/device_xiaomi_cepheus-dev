@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.power@1.3-service.xiaomi_sm8150"
+#define LOG_TAG "android.hardware.power@1.3-service.xiaomi_cepheus"
 
 #include <linux/input.h>
 

@@ -5,7 +5,17 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+if [ "${BASH_SOURCE[0]}" != "${0}" ]; then
+    return
+fi
+
 set -e
+
+# Required!
+export DEVICE=cepheus
+export VENDOR=xiaomi
+
+export DEVICE_BRINGUP_YEAR=2019
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
@@ -49,8 +59,8 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
-# Initialize the helper for common device
-setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${LINEAGE_ROOT}" true "${CLEAN_VENDOR}"
+# Initialize the helper for device
+setup_vendor "${DEVICE}" "${VENDOR}" "${LINEAGE_ROOT}" true "${CLEAN_VENDOR}"
 
 extract "${MY_DIR}/proprietary-files.txt" "${SRC}" \
         "${KANG}" --section "${SECTION}"
@@ -65,3 +75,5 @@ if [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt" ]; then
 fi
 
 "${MY_DIR}/setup-makefiles.sh"
+
+"./../../${VENDOR}/${DEVICE}/extract-files.sh" "$@"

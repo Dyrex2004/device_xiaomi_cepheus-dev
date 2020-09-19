@@ -28,6 +28,7 @@ ro.sf.lcd_density=440
 # Graphics
 ro.surface_flinger.has_wide_color_display=true
 ro.surface_flinger.has_HDR_display=true
+ro.surface_flinger.supports_background_blur=1
 
 # Media
 media.aac_51_output_enabled=true

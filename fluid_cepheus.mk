@@ -8,7 +8,7 @@ $(call inherit-product, device/xiaomi/cepheus/device.mk)
 
 # Inherit some common fluid stuff.
 $(call inherit-product, vendor/fluid/config/common_full_phone.mk)
-$(call inherit-product, vendor/gms/gms_full.mk)
+$(call inherit-product, device/xiaomi/cepheus/fluid_config.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := fluid_cepheus

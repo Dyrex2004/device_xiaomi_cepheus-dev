@@ -5,4 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_cepheus.mk
+    $(LOCAL_DIR)/fluid_cepheus.mk
+
+COMMON_LUNCH_CHOICES := \
+    fluid_cepheus-user \
+    fluid_cepheus-userdebug \
+    fluid_cepheus-eng

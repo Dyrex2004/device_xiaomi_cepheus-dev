@@ -190,6 +190,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-service
 
+# HIDL Transport
+PRODUCT_PACKAGES += \
+    libhidltransport \
+    libhidltransport.vendor
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \

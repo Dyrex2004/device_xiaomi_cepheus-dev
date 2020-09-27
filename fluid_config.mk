@@ -6,4 +6,4 @@ $(call inherit-product, vendor/gms/gms_full.mk)
 #IS_PHONE := true
 #TARGET_INCLUDE_STOCK_ARCORE := true
 
-FLUID_BUILDTYPE := OFFICIAL
+FLUID_BUILD_TYPE := OFFICIAL

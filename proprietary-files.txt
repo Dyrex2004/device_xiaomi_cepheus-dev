@@ -821,6 +821,9 @@ vendor/lib64/vendor.qti.imsrtpservice@2.1.so
 # SSR
 vendor/bin/ssr_setup
 
+# Seccomp Policy
+vendor/etc/seccomp_policy/codec2.vendor.base.policy
+
 # Sensor-configs
 vendor/etc/sensors/config/adux1050_0.json
 vendor/etc/sensors/config/ak991x_dri_0.json
